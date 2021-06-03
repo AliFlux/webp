@@ -56,7 +56,7 @@ func DecodeRGBA(data []byte) (m *image.RGBA, err error) {
 	return
 }
 
-func DecodeNRGBA(data []byte) (m *image.RGBA, err error) {
+func DecodeNRGBA(data []byte) (m *image.NRGBA, err error) {
 	pix, w, h, err := webpDecodeRGBA(data)
 	if err != nil {
 		return
