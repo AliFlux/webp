@@ -56,6 +56,19 @@ func DecodeRGBA(data []byte) (m *image.RGBA, err error) {
 	return
 }
 
+func DecodeNRGBA(data []byte) (m *image.RGBA, err error) {
+	pix, w, h, err := webpDecodeRGBA(data)
+	if err != nil {
+		return
+	}
+	m = &image.NRGBA{
+		Pix:    pix,
+		Stride: 4 * w,
+		Rect:   image.Rect(0, 0, w, h),
+	}
+	return
+}
+
 // DecodeGrayToSize decodes a Gray image scaled to the given dimensions. For
 // large images, the DecodeXXXToSize methods are significantly faster and
 // require less memory compared to decoding a full-size image and then resizing it.

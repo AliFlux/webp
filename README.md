@@ -1,9 +1,6 @@
-- *Go语言QQ群: 102319854, 1055927514*
-- *凹语言(凹读音“Wa”)(The Wa Programming Language): https://github.com/wa-lang/wa*
-
 ----
 
-webp
+WebP NRGBA Decoder (Forked from chai2010/webp)
 =====
 
 ```
@@ -15,8 +12,8 @@ webp
  ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═╝
 ```
 
-[![Build Status](https://travis-ci.org/chai2010/webp.svg)](https://travis-ci.org/chai2010/webp)
-[![GoDoc](https://godoc.org/github.com/chai2010/webp?status.svg)](https://godoc.org/github.com/chai2010/webp)
+[![Build Status](https://travis-ci.org/AliFlux/webp.svg)](https://travis-ci.org/AliFlux/webp)
+[![GoDoc](https://godoc.org/github.com/AliFlux/webp?status.svg)](https://godoc.org/github.com/AliFlux/webp)
 
 Benchmark
 =========
@@ -30,7 +27,7 @@ Install
 Install `GCC` or `MinGW` ([download here](http://tdm-gcc.tdragon.net/download)) at first,
 and then run these commands:
 
-1. `go get github.com/chai2010/webp`
+1. `go get github.com/AliFlux/webp`
 2. `go run hello.go`
 
 
@@ -48,7 +45,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/chai2010/webp"
+	"github.com/AliFlux/webp"
 )
 
 func main() {
